@@ -1,2 +1,3 @@
 ﻿  cpp training.cpp
+C:\Users\Laptop\source\repos\cpp training\cpp training.cpp(50,32): warning C4018: '<': signed/unsigned mismatch
   cpp training.vcxproj -> C:\Users\Laptop\source\repos\cpp training\Debug\cpp training.exe

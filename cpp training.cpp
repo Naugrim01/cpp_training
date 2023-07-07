@@ -5,12 +5,14 @@
 void is_prime_number();
 void prime_number_generator();
 void prime_number_generator_sieve_of_eratosthenes();
+void euclidean_algorithm();
 
 int main()
 {
-    is_prime_number();
-    prime_number_generator();
-    prime_number_generator_sieve_of_eratosthenes();
+    //is_prime_number();
+    //prime_number_generator();
+    //prime_number_generator_sieve_of_eratosthenes();
+    euclidean_algorithm();
 
     system("pause");
     return 0;
@@ -61,7 +63,7 @@ void prime_number_generator()
             }
         }
         if (check)
-            std::cout << i + 1 <<". "<< a << "\n";
+            std::cout << i + 1 <<". "<< a << '\n';
         else
             i--;
         a++;
@@ -98,10 +100,30 @@ void prime_number_generator_sieve_of_eratosthenes()
     {
         if (numbers_to_check[i])
         {
-            std::cout << tmp2 << ". " << i << "\n";
+            std::cout << tmp2 << ". " << i << '\n';
             tmp2++;
         }
     }
 
     delete[] numbers_to_check;
+}
+
+void euclidean_algorithm()
+{
+    int a, b;
+    std::cout << "enter first number:\n";
+    std::cin >> a;
+    std::cout << "enter second number:\n";
+    std::cin >> b;
+
+
+    while(a!=b)
+    {
+        if (a > b)
+            a = a - b;
+        else
+            b = b - a;
+    }
+
+    std::cout << "the greatest common divisor is:\n"<<a<<'\n';
 }

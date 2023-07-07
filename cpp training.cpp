@@ -7,14 +7,16 @@ void prime_number_generator();
 void prime_number_generator_sieve_of_eratosthenes();
 void euclidean_algorithm();
 void euclidean_algorithm_modulo();
+void factorial_iteratively();
 
 int main()
 {
     //is_prime_number();
     //prime_number_generator();
     //prime_number_generator_sieve_of_eratosthenes();
-    euclidean_algorithm();
-    euclidean_algorithm_modulo();
+    //euclidean_algorithm();
+    //euclidean_algorithm_modulo();
+    factorial_iteratively();
 
     system("pause");
     return 0;
@@ -146,4 +148,23 @@ void euclidean_algorithm_modulo()
     }
 
     std::cout << "the greatest common divisor is:\n" << b << '\n';
+}
+
+void factorial_iteratively()
+{
+    short int a;
+    unsigned long long factorial = 1;
+    std::cout << "enter number count factorial:\n";
+    std::cin >> a;
+    while (a < 1 || a > 20)
+    {
+        std::cout << "enter number count factorial(1-20):\n";
+        std::cin >> a;
+    }
+    for (int i = 1; i <= a; i++)
+    {
+        factorial *= i;
+        //std::cout << i<<". "<<factorial << '\n';
+    }
+    std::cout << "the factorial:\n"<< factorial <<'\n';
 }

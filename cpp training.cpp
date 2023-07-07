@@ -6,6 +6,7 @@ void is_prime_number();
 void prime_number_generator();
 void prime_number_generator_sieve_of_eratosthenes();
 void euclidean_algorithm();
+void euclidean_algorithm_modulo();
 
 int main()
 {
@@ -13,6 +14,7 @@ int main()
     //prime_number_generator();
     //prime_number_generator_sieve_of_eratosthenes();
     euclidean_algorithm();
+    euclidean_algorithm_modulo();
 
     system("pause");
     return 0;
@@ -126,4 +128,22 @@ void euclidean_algorithm()
     }
 
     std::cout << "the greatest common divisor is:\n"<<a<<'\n';
+}
+
+void euclidean_algorithm_modulo()
+{
+    int a, b, r;
+    std::cout << "enter first number:\n";
+    std::cin >> a;
+    std::cout << "enter second number:\n";
+    std::cin >> b;
+
+
+    while (r = a % b)
+    {
+        a = b;
+        b = r;
+    }
+
+    std::cout << "the greatest common divisor is:\n" << b << '\n';
 }

@@ -4,11 +4,13 @@
 
 void is_prime_number();
 void prime_number_generator();
+void prime_number_generator_sieve_of_eratosthenes();
 
 int main()
 {
-    //is_prime_number();
+    is_prime_number();
     prime_number_generator();
+    prime_number_generator_sieve_of_eratosthenes();
 
     system("pause");
     return 0;
@@ -43,7 +45,7 @@ void is_prime_number()
 void prime_number_generator()
 {
     bool check = true;
-    int a = 2, b = 0;
+    unsigned int a = 2, b = 0;
     std::cout << "Please enter the number of prime numbers to generate:\n";
     std::cin >> b;
     std::cin.ignore();
@@ -64,4 +66,42 @@ void prime_number_generator()
             i--;
         a++;
     }
+}
+
+void prime_number_generator_sieve_of_eratosthenes()
+{
+    unsigned int tmp, tmp2=1;
+    unsigned int top_border;
+    std::cout << "enter the upper range to which the generation of prime numbers is to be made:\n";
+    std::cin >> top_border;
+    bool* numbers_to_check;
+    numbers_to_check = new bool[top_border+1];
+
+    for (unsigned int i = 2; i <= top_border; i++)
+    {
+        numbers_to_check[i] = true;
+    }
+
+    for (unsigned int i = 2; i <= top_border; i++)
+    {
+        if ((i != 2) && (i % 2 == 0))
+            i++;
+        tmp = i + i;
+        while (tmp <= top_border)
+        {
+            numbers_to_check[tmp] = false;
+            tmp += i;
+        }
+    }
+
+    for (unsigned int i = 2; i <= top_border; i++)
+    {
+        if (numbers_to_check[i])
+        {
+            std::cout << tmp2 << ". " << i << "\n";
+            tmp2++;
+        }
+    }
+
+    delete[] numbers_to_check;
 }

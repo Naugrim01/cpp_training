@@ -140,6 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cpp training.cpp" />
+    <ClCompile Include="training_functions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="training_functions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

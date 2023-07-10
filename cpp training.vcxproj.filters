@@ -18,5 +18,13 @@
     <ClCompile Include="cpp training.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="training_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="training_functions.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

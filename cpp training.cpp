@@ -4,13 +4,14 @@
 
 int main()
 {
+    
     is_prime_number();
     prime_number_generator();
     prime_number_generator_sieve_of_eratosthenes();
     euclidean_algorithm();
     euclidean_algorithm_modulo();
     factorial_iteratively();
-   // void factorial_recursively();
+    factorial_recursively();
 
     system("pause");
     return 0;

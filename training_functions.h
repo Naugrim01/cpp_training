@@ -10,3 +10,4 @@ void euclidean_algorithm_modulo();
 void factorial_iteratively();
 unsigned long long factorial_f(int n);
 void factorial_recursively();
+void fibonacci_iteratively();

@@ -175,3 +175,42 @@ void factorial_recursively()
     std::cout << "the factorial:\n" << factorial << '\n';
 
 }
+
+void fibonacci_iteratively()
+{
+    int n;
+    unsigned long long left = 0, right = 1, total = 1;
+
+    std::cout << "enter number of fibonacci sequence:\n";
+    std::cin >> n;
+    while (n < 0 || n > 93)
+    {
+        std::cout << "enter number of fibonacci sequence(0-93):\n";
+        std::cin >> n;
+    }
+    if (n == 0)
+    {
+        total = 0;
+        std::cout << '0' << ". fibonacci sequence is: " << total << '\n';
+    }
+    else if (n == 1)
+    {
+        total = 1;
+        std::cout << '0' << ". fibonacci sequence is: " << '0' << '\n';
+        std::cout << '1' << ". fibonacci sequence is: " << total << '\n';
+    }
+    else
+    {
+        std::cout << '0' << ". fibonacci sequence is: " << '0' << '\n';
+        std::cout << '1' << ". fibonacci sequence is: " << total << '\n';
+
+        for (int i = 2; i <= n; i++)
+        {
+            total = left + right;
+            left = right;
+            right = total;
+            std::cout << i << ". fibonacci sequence is: " << total << '\n';
+        }
+    }
+
+}

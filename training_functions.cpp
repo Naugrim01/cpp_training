@@ -215,14 +215,14 @@ void fibonacci_iteratively()
 
 }
 
-int fibonacci_f(int n)
+int fibonacci_recursively(int n)
 {
     if (n == 0)
         return 0;
     else if (n == 1)
         return 1;
     else
-        return fibonacci_f(n - 1) + fibonacci_f(n - 2);
+        return fibonacci_recursively(n - 1) + fibonacci_recursively(n - 2);
 }
 
 void fibonacci_recursively()
@@ -236,5 +236,24 @@ void fibonacci_recursively()
         std::cout << "enter number of fibonacci sequence(0 - 40):\n";
         std::cin >> n;
     }
-    std::cout << n << ". fibonacci sequence is: " << fibonacci_f(n) << '\n';
+    std::cout << n << ". fibonacci sequence is: " << fibonacci_recursively(n) << '\n';
+}
+
+unsigned long long exponentiation(int base, int exponent)
+{
+    if (exponent == 0)
+        return 1;
+    else
+        return base * exponentiation(base, exponent - 1);
+}
+
+void exponentiation()
+{
+    int base, exponent;
+
+    std::cout << "enter base:\n";
+    std::cin >> base;
+    std::cout << "enter exponent:\n";
+    std::cin >> exponent;
+    std::cout << "exponentiation:" << exponentiation(base, exponent) <<'\n';
 }

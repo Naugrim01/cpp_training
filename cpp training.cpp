@@ -14,7 +14,7 @@ int main()
     factorial_recursively();
     fibonacci_iteratively();
     fibonacci_recursively();
-
+    exponentiation();
     system("pause");
     return 0;
 }

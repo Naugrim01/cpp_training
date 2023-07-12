@@ -13,6 +13,7 @@ int main()
     factorial_iteratively();
     factorial_recursively();
     fibonacci_iteratively();
+    fibonacci_recursively();
 
     system("pause");
     return 0;

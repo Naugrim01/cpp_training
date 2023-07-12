@@ -11,3 +11,5 @@ void factorial_iteratively();
 unsigned long long factorial_f(int n);
 void factorial_recursively();
 void fibonacci_iteratively();
+int fibonacci_f(int n);
+void fibonacci_recursively();

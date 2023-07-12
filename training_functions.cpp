@@ -214,3 +214,27 @@ void fibonacci_iteratively()
     }
 
 }
+
+int fibonacci_f(int n)
+{
+    if (n == 0)
+        return 0;
+    else if (n == 1)
+        return 1;
+    else
+        return fibonacci_f(n - 1) + fibonacci_f(n - 2);
+}
+
+void fibonacci_recursively()
+{
+    int n;
+
+    std::cout << "enter which number of fibonacci sequence to print (0 - 40):\n";
+    std::cin >> n;
+    while (n < 0 || n > 40)
+    {
+        std::cout << "enter number of fibonacci sequence(0 - 40):\n";
+        std::cin >> n;
+    }
+    std::cout << n << ". fibonacci sequence is: " << fibonacci_f(n) << '\n';
+}

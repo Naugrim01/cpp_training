@@ -145,23 +145,22 @@ void factorial_iteratively()
     for (short int i = 1; i <= a; i++)
     {
         factorial *= i;
-        //std::cout << i<<". "<<factorial << '\n';
+        std::cout << i << ". factorial " << factorial << '\n';
     }
-    std::cout << "the factorial:\n" << factorial << '\n';
 }
 
-unsigned long long factorial_f(int n)
+unsigned long long factorial(short int n)
 {
     if (n == 1)
         return 1;
 
-        return (factorial_f(n - 1) * n);
+        return (factorial(n - 1) * n);
 }
 
-void factorial_recursively()
+void factorial()
 {
     short int a;
-    unsigned long long factorial = 1;
+    unsigned long long factorial_number = 1;
     std::cout << "enter number count factorial:\n";
     std::cin >> a;
     while (a < 0 || a > 20)
@@ -169,10 +168,10 @@ void factorial_recursively()
         std::cout << "enter number count factorial(0-20):\n";
         std::cin >> a;
     }
-    if (factorial != 0)
-        factorial = factorial_f(a);
+    if (factorial_number != 0)
+        factorial_number = factorial(a);
 
-    std::cout << "the factorial:\n" << factorial << '\n';
+    std::cout << "the factorial:\n" << factorial_number << '\n';
 
 }
 

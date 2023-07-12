@@ -11,7 +11,7 @@ int main()
     euclidean_algorithm();
     euclidean_algorithm_modulo();
     factorial_iteratively();
-    factorial_recursively();
+    factorial();
     fibonacci_iteratively();
     fibonacci_recursively();
     exponentiation();

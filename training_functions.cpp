@@ -46,64 +46,75 @@ void menu_screen()
         case prime_number_check:
             {
                 std::cout << "1.  Is it prime number, or not?\n\n";
+                is_prime_number();
             }
         break;
         
         case prime_number_list:
         {
             std::cout << "2.  How many prime numbers for generate?\n\n";
+            prime_number_generator();
         }
         break;
         
         case primeNumber_list_up_border:
         {
             std::cout << "3.  Prime numbers generation list till select.\n\n";
+            prime_number_generator_sieve_of_eratosthenes();
         }
         break;
 
         case greatest_common_divisor:
         {
             std::cout << "4.  Greatest common divisor iteratively.\n\n";
+            euclidean_algorithm();
         }
         break;
 
         case greatest_common_divisor2:
         {
             std::cout << "5.  Greatest common divisor recursively.\n\n";
+            euclidean_algorithm_modulo();
         }
         break;
 
         case factorial_list:
         {
             std::cout << "6.  How many factorial numbers for generate?\n\n";
+            factorial_iteratively();
         }
         break;
 
         case factorial_one_number:
         {
             std::cout << "7.  Which one factorial number generate?\n\n";
+            factorial();
         }
         break;
 
         case fibonacci_list:
         {
             std::cout << "8.  How many fibonacci numbers for generate?\n\n";
+            fibonacci_iteratively();
         }
         break;
 
         case fibonacci_one_number:
         {
-            std::cout << "9.  Which one fibonacci number generate?n\n";
+            std::cout << "9.  Which one fibonacci number generate?\n\n";
+            fibonacci_recursively();
         }
         break;
 
         case exponent:
         {
             std::cout << "10. Exponentiation calculator.\n\n";
+            exponentiation();
         }
         break;
         
         default:
+
             break;
 
         }

@@ -16,6 +16,29 @@ enum training_functions
     exponent,
 };
 
+void menu_screen()
+{
+    std::cout
+        << "    ****************************************************\n"
+        << "    *                      MENU                        *\n"
+        << "    ****************************************************\n"
+        << "    *                 select option                    *\n"
+        << "    ****************************************************\n"
+        << "    * 1.  Is it prime number, or not?                  *\n"
+        << "    * 2.  How many prime numbers for generate?         *\n"
+        << "    * 3.  Prime numbers generation list till select.   *\n"
+        << "    * 4.  Greatest common divisor iteratively.         *\n"
+        << "    * 5.  Greatest common divisor recursively.         *\n"
+        << "    * 6.  How many factorial numbers for generate?     *\n"
+        << "    * 7.  Which one factorial number generate?         *\n"
+        << "    * 8.  How many fibonacci numbers for generate?     *\n"
+        << "    * 9.  Which one fibonacci number generate?         *\n"
+        << "    * 10. Exponentiation calculator.                   *\n"
+        << "    * 11. Exit                                         *\n"
+        << "    ****************************************************\n";
+
+}
+
 void is_prime_number()
 {
     bool check = true;

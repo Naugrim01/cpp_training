@@ -16,6 +16,6 @@ int main()
     fibonacci_recursively();
     exponentiation();*/
     menu_screen();
-    system("pause");
+    //system("pause");
     return 0;
 }

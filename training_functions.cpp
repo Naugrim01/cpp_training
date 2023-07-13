@@ -18,25 +18,100 @@ enum training_functions
 
 void menu_screen()
 {
-    std::cout
-        << "    ****************************************************\n"
-        << "    *                      MENU                        *\n"
-        << "    ****************************************************\n"
-        << "    *                 select option                    *\n"
-        << "    ****************************************************\n"
-        << "    * 1.  Is it prime number, or not?                  *\n"
-        << "    * 2.  How many prime numbers for generate?         *\n"
-        << "    * 3.  Prime numbers generation list till select.   *\n"
-        << "    * 4.  Greatest common divisor iteratively.         *\n"
-        << "    * 5.  Greatest common divisor recursively.         *\n"
-        << "    * 6.  How many factorial numbers for generate?     *\n"
-        << "    * 7.  Which one factorial number generate?         *\n"
-        << "    * 8.  How many fibonacci numbers for generate?     *\n"
-        << "    * 9.  Which one fibonacci number generate?         *\n"
-        << "    * 10. Exponentiation calculator.                   *\n"
-        << "    * 11. Exit                                         *\n"
-        << "    ****************************************************\n";
+    short int selection;
+    for (;;)
+    {
+        std::cout
+            << "    ****************************************************\n"
+            << "    *                      MENU                        *\n"
+            << "    ****************************************************\n"
+            << "    *                 select option                    *\n"
+            << "    ****************************************************\n"
+            << "    * 1.  Is it prime number, or not?                  *\n"
+            << "    * 2.  How many prime numbers for generate?         *\n"
+            << "    * 3.  Prime numbers generation list till select.   *\n"
+            << "    * 4.  Greatest common divisor iteratively.         *\n"
+            << "    * 5.  Greatest common divisor recursively.         *\n"
+            << "    * 6.  How many factorial numbers for generate?     *\n"
+            << "    * 7.  Which one factorial number generate?         *\n"
+            << "    * 8.  How many fibonacci numbers for generate?     *\n"
+            << "    * 9.  Which one fibonacci number generate?         *\n"
+            << "    * 10. Exponentiation calculator.                   *\n"
+            << "    * 11. Exit                                         *\n"
+            << "    ****************************************************\n";
+        std::cin >> selection;
+        system("cls");
+        switch (selection)
+        {
+        case prime_number_check:
+            {
+                std::cout << "1.  Is it prime number, or not?\n\n";
+            }
+        break;
+        
+        case prime_number_list:
+        {
+            std::cout << "2.  How many prime numbers for generate?\n\n";
+        }
+        break;
+        
+        case primeNumber_list_up_border:
+        {
+            std::cout << "3.  Prime numbers generation list till select.\n\n";
+        }
+        break;
 
+        case greatest_common_divisor:
+        {
+            std::cout << "4.  Greatest common divisor iteratively.\n\n";
+        }
+        break;
+
+        case greatest_common_divisor2:
+        {
+            std::cout << "5.  Greatest common divisor recursively.\n\n";
+        }
+        break;
+
+        case factorial_list:
+        {
+            std::cout << "6.  How many factorial numbers for generate?\n\n";
+        }
+        break;
+
+        case factorial_one_number:
+        {
+            std::cout << "7.  Which one factorial number generate?\n\n";
+        }
+        break;
+
+        case fibonacci_list:
+        {
+            std::cout << "8.  How many fibonacci numbers for generate?\n\n";
+        }
+        break;
+
+        case fibonacci_one_number:
+        {
+            std::cout << "9.  Which one fibonacci number generate?n\n";
+        }
+        break;
+
+        case exponent:
+        {
+            std::cout << "10. Exponentiation calculator.\n\n";
+        }
+        break;
+        
+        default:
+            break;
+
+        }
+        system("pause");
+        system("cls");
+        if (selection == 11)
+            break;
+    }
 }
 
 void is_prime_number()

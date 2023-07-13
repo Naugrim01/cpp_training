@@ -2,6 +2,20 @@
 #include <cmath>
 #include "training_functions.h"
 
+enum training_functions 
+{
+    prime_number_check = 1,
+    prime_number_list,
+    primeNumber_list_up_border,
+    greatest_common_divisor,
+    greatest_common_divisor2,
+    factorial_list,
+    factorial_one_number,
+    fibonacci_list,
+    fibonacci_one_number,
+    exponent,
+};
+
 void is_prime_number()
 {
     bool check = true;

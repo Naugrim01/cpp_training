@@ -14,6 +14,7 @@ enum training_functions
     fibonacci_list,
     fibonacci_one_number,
     exponent,
+    word_back,
 };
 
 void menu_screen()
@@ -37,7 +38,8 @@ void menu_screen()
             << "    * 8.  How many fibonacci numbers for generate?     *\n"
             << "    * 9.  Which one fibonacci number generate?         *\n"
             << "    * 10. Exponentiation calculator.                   *\n"
-            << "    * 11. Exit                                         *\n"
+            << "    * 11. Word backwards                               *\n"
+            << "    * 12. Exit                                         *\n"
             << "    ****************************************************\n";
         std::cin >> selection;
         system("cls");
@@ -112,6 +114,13 @@ void menu_screen()
             exponentiation();
         }
         break;
+
+        case word_back:
+        {
+            std::cout << "11. Word backwards.\n\n";
+            word_backwards();
+        }
+        break;
         
         default:
 
@@ -120,7 +129,7 @@ void menu_screen()
         }
         system("pause");
         system("cls");
-        if (selection == 11)
+        if (selection == 12)
             break;
     }
 }
@@ -378,4 +387,19 @@ void exponentiation()
     std::cout << "enter exponent:\n";
     std::cin >> exponent;
     std::cout << "exponentiation:" << exponentiation(base, exponent) <<'\n';
+}
+
+void word_backwards()
+{
+    std::string word; 
+    int word_size;
+
+    std::cout << "enter word to print backwards:\n";
+    std::cin >> word;
+    word_size = word.length();
+
+    for(int i = word_size - 1; i >=0 ;i--)
+        std::cout << word[i];
+
+    std::cout << '\n';
 }

@@ -15,3 +15,4 @@ int fibonacci_recursively(int n);
 void fibonacci_recursively();
 unsigned long long exponentiation(int n,int b);
 void exponentiation();
+void word_backwards();

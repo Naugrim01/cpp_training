@@ -2,7 +2,7 @@
 #include <cmath>
 #include "training_functions.h"
 
-enum training_functions 
+enum training_functions
 {
     prime_number_check = 1,
     prime_number_list,
@@ -15,6 +15,7 @@ enum training_functions
     fibonacci_one_number,
     exponent,
     word_back,
+    palindrome_test,
 };
 
 void menu_screen()
@@ -38,8 +39,9 @@ void menu_screen()
             << "    * 8.  How many fibonacci numbers for generate?     *\n"
             << "    * 9.  Which one fibonacci number generate?         *\n"
             << "    * 10. Exponentiation calculator.                   *\n"
-            << "    * 11. Word backwards                               *\n"
-            << "    * 12. Exit                                         *\n"
+            << "    * 11. Word backwards.                              *\n"
+            << "    * 12. Palindrome test.                             *\n"
+            << "    * 13. Exit                                         *\n"
             << "    ****************************************************\n";
         std::cin >> selection;
         system("cls");
@@ -121,6 +123,13 @@ void menu_screen()
             word_backwards();
         }
         break;
+
+        case palindrome_test:
+        {
+            std::cout << "13. Palindrome test.\n\n";
+            palindrome_check();
+        }
+        break;
         
         default:
 
@@ -129,7 +138,7 @@ void menu_screen()
         }
         system("pause");
         system("cls");
-        if (selection == 12)
+        if (selection == 13)
             break;
     }
 }
@@ -400,6 +409,36 @@ void word_backwards()
 
     for(int i = word_size - 1; i >=0 ;i--)
         std::cout << word[i];
+
+    std::cout << '\n';
+}
+
+bool palindrome_check(std::string word)
+{
+    bool palindrome;
+    int word_size = word.length();
+
+    for (int i = 0; i < word_size / 2; i++)
+        if (word[i] != word[word_size - 1 - i])
+        {
+            palindrome = false;
+            break;
+        }
+    return palindrome;
+}
+
+void palindrome_check()
+{
+    std::string word;
+    int word_size;
+
+    std::cout << "enter word to print palindrome test:\n";
+    std::cin >> word;
+    word_size = word.length();
+    if (palindrome_check(word))
+        std::cout << "it is palindrome";
+    else
+        std::cout << "it is not palindrome";
 
     std::cout << '\n';
 }

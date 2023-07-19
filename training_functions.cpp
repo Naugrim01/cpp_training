@@ -127,7 +127,7 @@ void menu_screen()
         case palindrome_test:
         {
             std::cout << "13. Palindrome test.\n\n";
-            palindrome_check();
+            palindrome_word_check();
         }
         break;
         
@@ -410,12 +410,15 @@ void word_backwards()
     for(int i = word_size - 1; i >=0 ;i--)
         std::cout << word[i];
 
+    if (palindrome_word_check(word))
+        std::cout << "\nit is palindrome";
+
     std::cout << '\n';
 }
 
-bool palindrome_check(std::string word)
+bool palindrome_word_check(std::string word)
 {
-    bool palindrome;
+    bool palindrome = true;
     int word_size = word.length();
 
     for (int i = 0; i < word_size / 2; i++)
@@ -427,7 +430,7 @@ bool palindrome_check(std::string word)
     return palindrome;
 }
 
-void palindrome_check()
+void palindrome_word_check()
 {
     std::string word;
     int word_size;
@@ -435,7 +438,7 @@ void palindrome_check()
     std::cout << "enter word to print palindrome test:\n";
     std::cin >> word;
     word_size = word.length();
-    if (palindrome_check(word))
+    if (palindrome_word_check(word))
         std::cout << "it is palindrome";
     else
         std::cout << "it is not palindrome";

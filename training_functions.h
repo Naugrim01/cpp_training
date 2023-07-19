@@ -16,5 +16,5 @@ void fibonacci_recursively();
 unsigned long long exponentiation(int n,int b);
 void exponentiation();
 void word_backwards();
-bool palindrome_check(std::string word);
-void palindrome_check();
+bool palindrome_word_check(std::string word);
+void palindrome_word_check();

@@ -21,9 +21,15 @@
     <ClCompile Include="training_functions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="game_of_life_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="training_functions.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_of_life_functions.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

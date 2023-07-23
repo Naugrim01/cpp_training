@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include "training_functions.h"
+#include "game_of_life_functions.h"
 
 enum training_functions
 {
@@ -16,6 +17,7 @@ enum training_functions
     exponent,
     word_back,
     palindrome_test,
+    game_of_life,
 };
 
 void menu_screen()
@@ -41,7 +43,8 @@ void menu_screen()
             << "    * 10. Exponentiation calculator.                   *\n"
             << "    * 11. Word backwards.                              *\n"
             << "    * 12. Palindrome test.                             *\n"
-            << "    * 13. Exit                                         *\n"
+            << "    * 13. Game of life.                                *\n"
+            << "    * 14. Exit                                         *\n"
             << "    ****************************************************\n";
         std::cin >> selection;
         system("cls");
@@ -131,14 +134,21 @@ void menu_screen()
         }
         break;
         
+        case game_of_life:
+        {
+            short_game_of_life();
+        }
+
+        break;
         default:
 
             break;
 
         }
+
         system("pause");
         system("cls");
-        if (selection == 13)
+        if (selection == 14)
             break;
     }
 }

@@ -140,9 +140,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cpp training.cpp" />
+    <ClCompile Include="game_of_life_functions.cpp" />
     <ClCompile Include="training_functions.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="game_of_life_functions.h" />
     <ClInclude Include="training_functions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

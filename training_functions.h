@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-void menu_screen();
+void menu_screen();/*
 void is_prime_number();
 void prime_number_generator();
 void prime_number_generator_sieve_of_eratosthenes();
@@ -14,7 +14,7 @@ void fibonacci_iteratively();
 int fibonacci_recursively(int n);
 void fibonacci_recursively();
 unsigned long long exponentiation(int n,int b);
-void exponentiation();
+void exponentiation();*/
 void word_backwards();
 bool palindrome_word_check(std::string word);
 void palindrome_word_check();

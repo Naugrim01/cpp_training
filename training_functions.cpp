@@ -3,6 +3,7 @@
 #include "training_functions.h"
 #include "game_of_life_functions.h"
 #include "sorting_lib.h"
+#include "math_algoritms.h"
 
 enum training_functions
 {
@@ -164,6 +165,7 @@ void menu_screen()
     }
 }
 
+/*
 void is_prime_number()
 {
     bool check = true;
@@ -419,6 +421,7 @@ void exponentiation()
     std::cout << "exponentiation:" << exponentiation(base, exponent) <<'\n';
 }
 
+*/
 void word_backwards()
 {
     std::string word; 

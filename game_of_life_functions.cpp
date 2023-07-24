@@ -114,7 +114,7 @@ void short_game_of_life()
         std::cout << "how much steps? 0-500\n";
         std::cin >> steps;
         system("cls");
-    } while ((a < 0 || steps > 500) || !isRight());
+    } while ((steps  < 0 || steps > 500) || !isRight());
 
     fill_array(field, 20, 60, a);
     show_array(field, 20, 60);

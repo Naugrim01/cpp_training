@@ -2,6 +2,7 @@
 #include <cmath>
 #include "training_functions.h"
 #include "game_of_life_functions.h"
+#include "sorting_lib.h"
 
 enum training_functions
 {
@@ -18,6 +19,7 @@ enum training_functions
     word_back,
     palindrome_test,
     game_of_life,
+    sorting_times_check,
 };
 
 void menu_screen()
@@ -44,7 +46,8 @@ void menu_screen()
             << "    * 11. Word backwards.                              *\n"
             << "    * 12. Palindrome test.                             *\n"
             << "    * 13. Game of life.                                *\n"
-            << "    * 14. Exit                                         *\n"
+            << "    * 14. Sorting times test.                          *\n"
+            << "    * 15. Exit                                         *\n"
             << "    ****************************************************\n";
         std::cin >> selection;
         system("cls");
@@ -140,6 +143,14 @@ void menu_screen()
         }
 
         break;
+
+        case sorting_times_check:
+        {
+            sorting_times();
+        }
+
+        break;
+
         default:
 
             break;
@@ -148,7 +159,7 @@ void menu_screen()
 
         system("pause");
         system("cls");
-        if (selection == 14)
+        if (selection == 15)
             break;
     }
 }

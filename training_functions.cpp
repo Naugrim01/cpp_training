@@ -29,30 +29,34 @@ void menu_screen()
     short int selection;
     for (;;)
     {
-        std::cout
-            << "    ****************************************************\n"
-            << "    *                      MENU                        *\n"
-            << "    ****************************************************\n"
-            << "    *                 select option                    *\n"
-            << "    ****************************************************\n"
-            << "    * 1.  Is it prime number, or not?                  *\n"
-            << "    * 2.  How many prime numbers for generate?         *\n"
-            << "    * 3.  Prime numbers generation list till select.   *\n"
-            << "    * 4.  Greatest common divisor iteratively.         *\n"
-            << "    * 5.  Greatest common divisor recursively.         *\n"
-            << "    * 6.  How many factorial numbers for generate?     *\n"
-            << "    * 7.  Which one factorial number generate?         *\n"
-            << "    * 8.  How many fibonacci numbers for generate?     *\n"
-            << "    * 9.  Which one fibonacci number generate?         *\n"
-            << "    * 10. Exponentiation calculator.                   *\n"
-            << "    * 11. Word backwards.                              *\n"
-            << "    * 12. Palindrome test.                             *\n"
-            << "    * 13. Game of life.                                *\n"
-            << "    * 14. Sorting times test.                          *\n"
-            << "    * 15. Exit                                         *\n"
-            << "    ****************************************************\n";
-        std::cin >> selection;
-        system("cls");
+        do
+        {
+            std::cout
+                << "    ****************************************************\n"
+                << "    *                      MENU                        *\n"
+                << "    ****************************************************\n"
+                << "    *                 select option                    *\n"
+                << "    ****************************************************\n"
+                << "    * 1.  Is it prime number, or not?                  *\n"
+                << "    * 2.  How many prime numbers for generate?         *\n"
+                << "    * 3.  Prime numbers generation list till select.   *\n"
+                << "    * 4.  Greatest common divisor iteratively.         *\n"
+                << "    * 5.  Greatest common divisor recursively.         *\n"
+                << "    * 6.  How many factorial numbers for generate?     *\n"
+                << "    * 7.  Which one factorial number generate?         *\n"
+                << "    * 8.  How many fibonacci numbers for generate?     *\n"
+                << "    * 9.  Which one fibonacci number generate?         *\n"
+                << "    * 10. Exponentiation calculator.                   *\n"
+                << "    * 11. Word backwards.                              *\n"
+                << "    * 12. Palindrome test.                             *\n"
+                << "    * 13. Game of life.                                *\n"
+                << "    * 14. Sorting times test.                          *\n"
+                << "    * 15. Exit                                         *\n"
+                << "    ****************************************************\n";
+            std::cin >> selection;
+            system("cls");
+        } while ((selection < 0 || selection==0 || selection > 15) || !isRight());
+        //system("cls");
         switch (selection)
         {
         case prime_number_check:

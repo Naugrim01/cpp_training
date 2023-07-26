@@ -30,6 +30,9 @@
     <ClCompile Include="math_algoritms.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="string_algorithms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="training_functions.h">
@@ -43,6 +46,9 @@
     </ClInclude>
     <ClInclude Include="math_algoritms.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="string_algorithms.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

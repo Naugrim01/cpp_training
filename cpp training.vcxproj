@@ -143,12 +143,14 @@
     <ClCompile Include="game_of_life_functions.cpp" />
     <ClCompile Include="math_algoritms.cpp" />
     <ClCompile Include="sorting_lib.cpp" />
+    <ClCompile Include="string_algorithms.cpp" />
     <ClCompile Include="training_functions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game_of_life_functions.h" />
     <ClInclude Include="math_algoritms.h" />
     <ClInclude Include="sorting_lib.h" />
+    <ClInclude Include="string_algorithms.h" />
     <ClInclude Include="training_functions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

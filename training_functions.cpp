@@ -55,11 +55,10 @@ void menu_screen()
                 << "    ****************************************************\n";
             std::cin >> selection;
 
-
-
             system("cls");
+
         } while (!(isRight()) || selection < 0 || selection==0 || selection > 15 );
-        //system("cls");
+
         switch (selection)
         {
         case prime_number_check:

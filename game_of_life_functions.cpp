@@ -92,14 +92,14 @@ void short_game_of_life()
         std::cout << "how much life? 0-100%\n";
         std::cin >> a;
         system("cls");
-    } while (( a < 0|| a > 100) || !isRight());
+    } while (!isRight() || a < 0 || a > 100);
 
     do
     {
         std::cout << "how much steps? 0-500\n";
         std::cin >> steps;
         system("cls");
-    } while ((steps  < 0 || steps > 500) || !isRight());
+    } while (!isRight() || (steps  < 0 || steps > 500));
 
     fill_array(field, 20, 60, a);
     show_array(field, 20, 60);

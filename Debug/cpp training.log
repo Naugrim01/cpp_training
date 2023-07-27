@@ -1,2 +1,10 @@
-﻿  math_algoritms.cpp
+﻿  cpp training.cpp
+  game_of_life_functions.cpp
+C:\Users\Laptop\source\repos\cpp training\game_of_life_functions.cpp(11,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  math_algoritms.cpp
+  sorting_lib.cpp
+C:\Users\Laptop\source\repos\cpp training\sorting_lib.cpp(17,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  string_algorithms.cpp
+  training_functions.cpp
+  Generating Code...
   cpp training.vcxproj -> C:\Users\Laptop\source\repos\cpp training\Debug\cpp training.exe

@@ -1,7 +1,3 @@
-#include <iostream>
-#include <cmath>
-
-
 void is_prime_number();
 void prime_number_generator();
 void prime_number_generator_sieve_of_eratosthenes();

@@ -271,10 +271,15 @@ unsigned long long exponentiation(int base, int exponent)
 void exponentiation()
 {
     int base, exponent;
-
+    do
+    {
     std::cout << "enter base:\n";
     std::cin >> base;
+    } while (!isRight());
+    do
+    {
     std::cout << "enter exponent:\n";
     std::cin >> exponent;
+    } while (!isRight());
     std::cout << "exponentiation:" << exponentiation(base, exponent) << '\n';
 }

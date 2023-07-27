@@ -8,9 +8,11 @@ void is_prime_number()
 {
     bool check = true;
     int a;
-    std::cout << "Please insert the number, the program will check is it prime number or not\n";
-    std::cin >> a;
-    std::cin.ignore();
+    do
+    {
+        std::cout << "Please insert the number, the program will check is it prime number or not\n";
+        std::cin >> a;
+    }while(!isRight());
 
     for (unsigned int i = 2; i <= sqrt(a); i++)
     {

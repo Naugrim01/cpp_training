@@ -107,11 +107,16 @@ void prime_number_generator_sieve_of_eratosthenes()
 void euclidean_algorithm()
 {
     int a, b;
-    std::cout << "enter first number:\n";
-    std::cin >> a;
+    do
+    {
+        std::cout << "enter first number:\n";
+        std::cin >> a;
+    } while (!isRight());
+    do
+    {
     std::cout << "enter second number:\n";
     std::cin >> b;
-
+    } while (!isRight());
 
     while (a != b)
     {
@@ -127,10 +132,16 @@ void euclidean_algorithm()
 void euclidean_algorithm_modulo()
 {
     int a, b, r;
-    std::cout << "enter first number:\n";
-    std::cin >> a;
-    std::cout << "enter second number:\n";
-    std::cin >> b;
+    do
+    {
+        std::cout << "enter first number:\n";
+        std::cin >> a;
+    } while (!isRight());
+    do
+    {
+        std::cout << "enter second number:\n";
+        std::cin >> b;
+    } while (!isRight());
 
 
     while (r = a % b)
@@ -146,13 +157,13 @@ void factorial_iteratively()
 {
     short int a;
     unsigned long long factorial = 1;
-    std::cout << "enter number count factorial:\n";
-    std::cin >> a;
-    while (a < 0 || a > 20)
+    do
     {
-        std::cout << "enter number count factorial(0-20):\n";
-        std::cin >> a;
-    }
+    std::cout << "enter number count factorial(0-20):\n";
+    std::cin >> a;
+    system("cls");
+    } while (!isRight() || a < 1 || a > 20);
+    
     for (short int i = 1; i <= a; i++)
     {
         factorial *= i;
@@ -172,13 +183,13 @@ void factorial()
 {
     short int a;
     unsigned long long factorial_number = 1;
-    std::cout << "enter number count factorial:\n";
-    std::cin >> a;
-    while (a < 0 || a > 20)
+    do
     {
         std::cout << "enter number count factorial(0-20):\n";
         std::cin >> a;
-    }
+        system("cls");
+    } while (!isRight() || a < 1 || a > 20);
+
     if (factorial_number != 0)
         factorial_number = factorial(a);
 

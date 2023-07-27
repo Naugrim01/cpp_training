@@ -66,8 +66,12 @@ void prime_number_generator_sieve_of_eratosthenes()
 {
     unsigned int tmp, tmp2 = 1;
     unsigned int top_border;
+ do
+ {
     std::cout << "enter the upper range to which the generation of prime numbers is to be made:\n";
     std::cin >> top_border;
+ } while (!isRight());
+
     bool* numbers_to_check;
     numbers_to_check = new bool[top_border + 1];
 

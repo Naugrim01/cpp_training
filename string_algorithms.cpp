@@ -1,5 +1,6 @@
 #include <iostream>
 #include "string_algorithms.h"
+#include "training_functions.h"
 
 
 void word_backwards()

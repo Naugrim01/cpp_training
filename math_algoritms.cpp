@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include "math_algoritms.h"
+#include "training_functions.h"
 
 
 void is_prime_number()

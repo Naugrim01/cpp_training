@@ -3,25 +3,10 @@
 #include <time.h>
 #include <string>
 #include "sorting_lib.h"
-#include "game_of_life_functions.h"
+#include "training_functions.h"
 
 
-/*
-bool isRight()
-{
-	if (std::cin.rdstate())
-	{
-		std::cin.clear();
-		std::cin.ignore(1024, '\n');
 
-		system("cls");
-
-		return false;
-	}
-
-	return true;
-}
-*/
 double time_check(clock_t start, clock_t stop)
 {
 	return (((static_cast<double>(stop)) - (static_cast<double>(start))) / CLOCKS_PER_SEC);

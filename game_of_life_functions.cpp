@@ -3,23 +3,8 @@
 #include <time.h>
 #include <iomanip>
 #include "game_of_life_functions.h"
+#include "training_functions.h"
 
-
-bool isRight()
-{
-    if (std::cin.rdstate())
-    {
-        std::cin.clear();
-        std::cin.ignore(1024, '\n');
-
-        system("cls");
-
-        return false;
-    }
-    system("cls");
-
-    return true;
-}
 
 void fill_array(bool t[20][60], int x, int y, int a)
 {

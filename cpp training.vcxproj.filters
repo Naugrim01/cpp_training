@@ -35,19 +35,19 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="training_functions.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="string_algorithms.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="game_of_life_functions.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="sorting_lib.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="math_algoritms.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="string_algorithms.h">
+    <ClInclude Include="sorting_lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="training_functions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

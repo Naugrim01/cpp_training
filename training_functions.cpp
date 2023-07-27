@@ -169,3 +169,18 @@ void menu_screen()
             break;
     }
 }
+
+bool isRight()
+{
+    if (std::cin.rdstate())
+    {
+        std::cin.clear();
+        std::cin.ignore(1024, '\n');
+
+        system("cls");
+
+        return false;
+    }
+
+    return true;
+}

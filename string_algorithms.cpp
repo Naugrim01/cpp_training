@@ -8,8 +8,12 @@ void word_backwards()
     std::string word;
     int word_size;
 
-    std::cout << "enter word to print backwards:\n";
-    std::cin >> word;
+        std::cout << "enter word to print backwards:\n";
+        std::cin >> word;
+
+        std::cin.clear();
+        std::cin.ignore(1024, '\n');
+
     word_size = word.length();
 
     for (int i = word_size - 1; i >= 0; i--)
@@ -42,6 +46,10 @@ void palindrome_word_check()
 
     std::cout << "enter word to print palindrome test:\n";
     std::cin >> word;
+
+    std::cin.clear();
+    std::cin.ignore(1024, '\n');
+
     word_size = word.length();
     if (palindrome_word_check(word))
         std::cout << "it is palindrome";

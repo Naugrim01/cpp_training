@@ -54,8 +54,11 @@ void menu_screen()
                 << "    * 15. Exit                                         *\n"
                 << "    ****************************************************\n";
             std::cin >> selection;
+
+
+
             system("cls");
-        } while ((selection < 0 || selection==0 || selection > 15) || !isRight());
+        } while (!(isRight()) || selection < 0 || selection==0 || selection > 15 );
         //system("cls");
         switch (selection)
         {

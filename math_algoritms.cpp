@@ -37,9 +37,12 @@ void prime_number_generator()
 {
     bool check = true;
     unsigned int a = 2, b = 0;
-    std::cout << "Please enter the number of prime numbers to generate:\n";
-    std::cin >> b;
-    std::cin.ignore();
+    do
+    {
+        std::cout << "Please enter the number of prime numbers to generate:\n";
+        std::cin >> b;
+
+    } while (!isRight());
     for (unsigned int i = 0; i < b; i++)
     {
         check = true;

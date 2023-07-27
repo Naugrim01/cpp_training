@@ -202,13 +202,13 @@ void fibonacci_iteratively()
     int n;
     unsigned long long left = 0, right = 1, total = 1;
 
-    std::cout << "enter number of fibonacci sequence:\n";
-    std::cin >> n;
-    while (n < 0 || n > 93)
+    do
     {
         std::cout << "enter number of fibonacci sequence(0-93):\n";
         std::cin >> n;
-    }
+        system("cls");
+    } while (!isRight() || n < 0 || n > 93);
+
     if (n == 0)
     {
         total = 0;
@@ -250,13 +250,13 @@ void fibonacci_recursively()
 {
     int n;
 
-    std::cout << "enter which number of fibonacci sequence to print (0 - 40):\n";
-    std::cin >> n;
-    while (n < 0 || n > 40)
+    do
     {
         std::cout << "enter number of fibonacci sequence(0 - 40):\n";
         std::cin >> n;
-    }
+        system("cls");
+    }while (!isRight() || n < 0 || n > 40);
+
     std::cout << n << ". fibonacci sequence is: " << fibonacci_recursively(n) << '\n';
 }
 
